@@ -23,7 +23,7 @@ public void add(int data){
         Node current = head;
 
         while(current != null){
-            System.out.println(current.data);
+            System.out.println(current.childId);
             current = current.next;
         }
     }

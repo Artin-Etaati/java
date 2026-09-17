@@ -8,10 +8,10 @@ public class main {
         // l1.printList();
 
 // ------------------------------------------------
-        // LinkedList[] array = new LinkedList[3];
-        // array[0] = new LinkedList();
-        // array[0].add(5);
-        // array[0].printList();
+        LinkedList[] array = new LinkedList[3];
+        array[0] = new LinkedList();
+        array[0].add(5);
+        array[0].printList();
 
 // ------------------------------------------------
 

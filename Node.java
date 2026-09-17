@@ -1,10 +1,10 @@
 public class Node {
-    int data;
+    int childId;
     Node next;
 
 
 public Node(int data) {
-    this.data = data;
+    this.childId = data;
     this.next = null;
 }
 }
