@@ -23,14 +23,19 @@ public void addChild(int childId){
   current.next = newChild;
 }
 
+// public void printChildList(){
+//   Node current = head;
 
+//   while(current != null){
+//     System.out.println(current.childId);
+//     current = current.next;
+//   }
+// }
 
-
-
-
-
-
-
+public void printProcess(){ 
+  int p = parentId;
+  System.out.println(p);
+}
 
 
 
