@@ -17,8 +17,23 @@ public class main {
 
 Process[] pcb = new Process[5];
 
-pcb[0] = new Process(-1,0);  // The root
-pcb[0].printProcess();
+pcb[0] = new Process(-1);  // The root
+pcb[0].printParentID();
+
+
+ pcb[1] = new Process(0);
+ pcb[0].addChild(1);
+
+ pcb[0].printChildList();
+
+
+
+
+
+
+
+
+
     
     }
 }

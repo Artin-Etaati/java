@@ -2,7 +2,7 @@ public class Process {
   int parentId;
   Node head;
 
-public Process(int parentId, int childId){
+public Process(int parentId){
   this.parentId = parentId;
   this.head = null;
 }
@@ -23,18 +23,18 @@ public void addChild(int childId){
   current.next = newChild;
 }
 
-// public void printChildList(){
-//   Node current = head;
+public void printChildList(){
+  Node current = head;
 
-//   while(current != null){
-//     System.out.println(current.childId);
-//     current = current.next;
-//   }
-// }
+  while(current != null){
+    System.out.println("number of the child: " + current.childId);
+    current = current.next;
+  }
+}
 
-public void printProcess(){ 
+public void printParentID(){ 
   int p = parentId;
-  System.out.println(p);
+  System.out.println("parentId : " + p);
 }
 
 
