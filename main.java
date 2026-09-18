@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 public class main {
     public static void main(String[] args){
 
@@ -14,6 +17,9 @@ public class main {
         // array[0].printList();
 
 // ------------------------------------------------
+Scanner scn = new Scanner(System.in);
+// System.out.println("input the parent id for the new child");
+// int input = scn.nextInt();
 
 Process[] pcb = new Process[5];
 
@@ -21,14 +27,16 @@ pcb[0] = new Process(-1);  // The root
 pcb[0].printParentID();
 
 
- pcb[1] = new Process(0);
- pcb[0].addChild(1);
+pcb[1] = new Process(0);
+pcb[0].addChild(1);
 
- pcb[0].printChildList();
-
-
+pcb[0].printChildList();
 
 
+
+// while(input != 100){
+
+// }
 
 
 
