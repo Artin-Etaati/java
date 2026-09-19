@@ -16,8 +16,6 @@ public class main {
 
 Scanner scn = new Scanner(System.in);
 int input = 0;
-
-
 Process[] pcb = new Process[5];
 
 
@@ -49,7 +47,7 @@ while(input != 4){
             int parent = scn.nextInt();
             int childIndex = -1;
             if(pcb[parent] == null){ // checks if the parent exists
-                System.out.println("This parentId is invalid. \n  Maybe try checking to see if you have initialized the first process.");
+                System.out.println("This parentId is invalid. \n Maybe try checking to see if you have initialized the first process.");
                 break;
             } 
             for ( int i = 1 ; i < pcb.length ; i++){
