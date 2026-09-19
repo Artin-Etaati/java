@@ -7,7 +7,7 @@ public Process(int parentId){
   this.head = null;
 }
 
-public void addChild(int childId){
+public void addChildToParent(int childId){
   Node newChild = new Node(childId);
 
   if ( head == null){
@@ -23,11 +23,17 @@ public void addChild(int childId){
   current.next = newChild;
 }
 
+
 public void printChildList(){
   Node current = head;
+  
+  if(current == null){
+    System.out.println("No child processes");
+    return;
+  }
 
   while(current != null){
-    System.out.println("number of the child: " + current.childId);
+    System.out.println("child process: " + current.childId);
     current = current.next;
   }
 }
